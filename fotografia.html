@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotografia</title>
+</head>
+<body>
+   
+
+
+    
+ </style>   <script>
+        setTimeout(function() {
+            document.getElementById('welcome-message').style.display = 'none';
+            // Aquí puedes redirigir a la página principal o mostrar el contenido principal
+            // window.location.href = 'main.html'; // Descomenta esta línea para redirigir a otra página
+        }, 3000);
+    </script>
+
+    <style>
+        @keyframes fadeOut {
+            0% { opacity: 1; }
+            100% { opacity: 0; }
+        }
+    </style>
+<div style="position: fixed; top: 20px; right: 20px;"></div>
+    <button id="menu-button" style="font-size: 1.5em; padding: 10px;">☰</button>
+</div>
+
+<div id="menu" style="display: none; position: fixed; top: 0; right: 0; width: 200px; height: 100%; background-color: white; box-shadow: -2px 0 5px rgba(0,0,0,0.5);">
+    <ul style="list-style-type: none; padding: 20px;">
+        <li><a href="#section1">Contactos</a></li>
+    </ul>
+</div>
+
+<script>
+    document.getElementById('menu-button').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if (menu.style.display === 'none' || menu.style.display === '') {
+            menu.style.display = 'block';
+        } else {
+            menu.style.display = 'none';
+        }
+    });
+</script>
+<script>
+    document.querySelector('a[href="#section1"]').addEventListener('click', function(event) {
+        event.preventDefault();
+        window.location.href = 'https://wa.me/3053054215';
+    });
+</script>
+
+<div style="position: fixed; top: 20px; right: 60px;"></div>
+
+
+
+    <style>
+        body {
+            background-color: black;
+            color: white;
+        }
+        a {
+            color: rgb(243, 132, 132);
+        }
+    </style>
+
+
+    <div style="text-align: center; margin-top: 20px;">
+        <img src="file:///C:/Users/valen/Desktop/pagina de fotografia/mi marca de agua.png" alt="Mi Marca de Agua" style="width: 300px; height: auto;">
+    </div>
+
+
+    <div style="text-align: center; margin-top: 40px;">
+        <p>Bienvenido a mi página de fotografía.</p>
+             Aquí encontrarás una selección de mis mejores trabajos, desde retratos hasta paisajes. Mi pasión por la fotografía me ha llevado a capturar momentos únicos y especiales que quiero compartir contigo. Espero que disfrutes de mi galería y encuentres inspiración en cada imagen.</p>
+    </div>
+
+         </style>       
+                                 
+ 
+
+
+
+
+
+         
+<br>
+<center>
+Paisajes
+
+    <div style="text-align: center; margin-top: 20px;"></div>
+        <img src="file:///C:/Users/valen/Desktop/pagina de fotografia/paisajes.jpg" alt="Paisajes" style="width: 200px; height: auto; cursor: pointer;" id="paisajes-album">
+    </div>
+
+    <div id="album-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); text-align: center; padding-top: 50px;">
+        <span id="close-modal" style="position: absolute; top: 20px; right: 20px; font-size: 2em; cursor: pointer; color: white;">&times;</span>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <img src="c:\Users\valen\Desktop\pagina de fotografia\_MG_0023.JPG" alt="Imagen 1" style="width: 200px; height: auto; margin: 10px;">
+            <img src="c:\Users\valen\Desktop\pagina de fotografia\_MG_0024.JPG" alt="Imagen 2" style="width: 200px; height: auto; margin: 10px;">
+            <img src="c:\Users\valen\Desktop\pagina de fotografia\_MG_0025.JPG" alt="Imagen 3" style="width: 200px; height: auto; margin: 10px;">
+            <img src="c:\Users\valen\Desktop\pagina de fotografia\_MG_0026.JPG" alt="Imagen 4" style="width: 200px; height: auto; margin: 10px;">
+        </div>
+    </div>
+
+<script>
+        document.getElementById('paisajes-album').addEventListener('click', function() {
+            document.getElementById('album-modal').style.display = 'block';
+        });
+
+        document.getElementById('close-modal').addEventListener('click', function() {
+            document.getElementById('album-modal').style.display = 'none';
+        });
+    </script>
+</center>
+
+<br>
+   <br> 
+   
+   
+<center>
+   animales
+    <div style="text-align: center; margin-top: 20px;"></div>
+        <img src="file:///C:/Users/valen/Desktop/pagina de fotografia/proteger-a-los-animales-1024x654.jpg" alt="Proteger a los Animales" style="width: 200px; height: auto; cursor: pointer;" id="animales-album">
+    </div>
+
+    <div id="animales-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); text-align: center; padding-top: 50px;">
+        <span id="close-animales-modal" style="position: absolute; top: 20px; right: 20px; font-size: 2em; cursor: pointer; color: white;">&times;</span>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <img src="c:\Users\valen\Pictures\_MG_0004.JPG" alt="Animal 1" style="width: 200px; height: auto; margin: 10px;">
+            <img src="c:\Users\valen\Desktop\pagina de fotografia\animal2.jpg" alt="Animal 2" style="width: 200px; height: auto; margin: 10px;">
+            <img src="c:\Users\valen\Desktop\pagina de fotografia\animal3.jpg" alt="Animal 3" style="width: 200px; height: auto; margin: 10px;">
+            <img src="c:\Users\valen\Desktop\pagina de fotografia\animal4.jpg" alt="Animal 4" style="width: 200px; height: auto; margin: 10px;">
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('animales-album').addEventListener('click', function() {
+            document.getElementById('animales-modal').style.display = 'block';
+        });
+
+        document.getElementById('close-animales-modal').addEventListener('click', function() {
+            document.getElementById('animales-modal').style.display = 'none';
+        });
+    </script>
+ </center>
+
+</style>
+
+
+<center>
+    Iglesias
+    <div style="text-align: center; margin-top: 20px;"></div>
+        <img src="file:///C:/Users/valen/Desktop/pagina de fotografia/iglesias.jpg" alt="Iglesias" style="width: 200px; height: auto; cursor: pointer;" id="iglesias-album">
+    </div>
+
+    <div id="iglesias-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); text-align: center; padding-top: 50px;">
+        <span id="close-iglesias-modal" style="position: absolute; top: 20px; right: 20px; font-size: 2em; cursor: pointer; color: white;">&times;</span>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <img src="c:\Users\valen\Desktop\pagina de fotografia\iglesia1.jpg" alt="Iglesia 1" style="width: 200px; height: auto; margin: 10px;">
+            <img src="c:\Users\valen\Desktop\pagina de fotografia\iglesia2.jpg" alt="Iglesia 2" style="width: 200px; height: auto; margin: 10px;">
+            <img src="c:\Users\valen\Desktop\pagina de fotografia\iglesia3.jpg" alt="Iglesia 3" style="width: 200px; height: auto; margin: 10px;">
+            <img src="c:\Users\valen\Desktop\pagina de fotografia\iglesia4.jpg" alt="Iglesia 4" style="width: 200px; height: auto; margin: 10px;">
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('iglesias-album').addEventListener('click', function() {
+            document.getElementById('iglesias-modal').style.display = 'block';
+        });
+
+        document.getElementById('close-iglesias-modal').addEventListener('click', function() {
+            document.getElementById('iglesias-modal').style.display = 'none';
+        });
+    </script>
+</center>
+
+
+
+
+
+
+
+
+    
+    <div style="text-align: center; margin-top: 20px;">
+        <p>Sígueme en mis redes sociales:</p>
+        <a href="https://www.instagram.com/sebastianvalencia.aguirre?igsh=MWNmcmNmeTg0Mzg4MA==" target="_blank" style="margin-right: 10px;">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;">
+        </a>
+        <a href="https://www.facebook.com/share/1DhQsxfE6Z/" target="_blank">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;">
+        </a>
+    </div>
+
+    <style>
+        @keyframes bounce {
+            0%, 20%, 50%, 80%, 100% {
+                transform: translateY(0);
+            }
+            40% {
+                transform: translateY(-20px);
+            }
+            60% {
+                transform: translateY(-10px);
+            }
+        }
+
+        .social-icon {
+            animation: bounce 2s infinite;
+        }
+    </style>
+
+    <script>
+        document.querySelectorAll('a img').forEach(function(img) {
+            img.classList.add('social-icon');
+        });
+    </script>
+
+
+
+
+    <h5 style="text-align: center; margin-top: 20px;">
+        <img src="file:///C:/Users/valen/Desktop/pagina de fotografia/mi marca de agua.png" alt="Mi Marca de Agua">
+    </h5>
+    <style>
+        @keyframes moveWatermark {
+            0% { transform: translateX(0); }
+            50% { transform: translateX(10px); }
+            100% { transform: translateX(0); }
+        }
+
+        .watermark {
+            animation: moveWatermark 3s infinite;
+        }
+    </style>
+
+
+
+
+
+    <script>
+        document.querySelector('h5 img').classList.add('watermark');
+    </script>
+
+
+
+    <div style="text-align: center; margin-top: 20px;">
+        <h2>Comentarios</h2>
+        <div id="comments-section" style="max-width: 600px; margin: 0 auto; text-align: left;">
+            <!-- Aquí se mostrarán los comentarios -->
+        </div>
+        <div style="margin-top: 20px;">
+            <textarea id="comment-input" placeholder="Escribe tu comentario aquí..." style="width: 100%; height: 100px;"></textarea>
+            <button id="submit-comment" style="margin-top: 10px; padding: 10px 20px;">Enviar</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('submit-comment').addEventListener('click', function() {
+            var commentInput = document.getElementById('comment-input');
+            var commentText = commentInput.value.trim();
+            if (commentText !== '') {
+                var commentSection = document.getElementById('comments-section');
+                var newComment = document.createElement('div');
+                newComment.style.border = '1px solid #ccc';
+                newComment.style.padding = '10px';
+                newComment.style.marginTop = '10px';
+                newComment.textContent = commentText;
+                commentSection.appendChild(newComment);
+                commentInput.value = '';
+            }
+        });
+    </script>
+
+<br>
+<center>
+    Medellin
+<div style="text-align: center; margin-top: 20px;"></div>
+<video width="320" height="240" controls>
+    <source src="file:///C:/Users/valen/Desktop/pagina de fotografia/WhatsApp%20Video%202025-03-14%20at%209.51.09%20AM.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+</video>
+</div>
+</center>
+
+
+
+
+
+    
+    <div id="welcome-message" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: black; color: white; display: flex; justify-content: center; align-items: center; font-size: 2em; z-index: 1000;">
+        <p>Bienvenido a mi página de fotografía</p>
+        <style>
+            @keyframes pulse {
+                0% { transform: scale(1); }
+                50% { transform: scale(1.1); }
+                100% { transform: scale(1); }
+            }
+
+            #welcome-message p {
+                animation: pulse 1.5s infinite;
+            }
+        </style>
+    </div>
+
+    <div style="text-align: center; margin-top: 20px;">
+        <p>&copy; 2023 Todos los derechos reservados.</p>
+        
+    <div style="text-align: center; margin-top: 20px;">
+        <h6>Prohibida la venta de fotos de esta página.</h6>
+        <h6>El uso no autorizado de cualquier contenido de esta página está sujeto a penalidades bajo la ley de derechos de autor.</h6>
+    </div>
+
+
+
+</body>
+</html>
