@@ -10,7 +10,7 @@
 
 
     
- </style>   <script>
+<script>
         setTimeout(function() {
             document.getElementById('welcome-message').style.display = 'none';
             // Aquí puedes redirigir a la página principal o mostrar el contenido principal
@@ -71,14 +71,65 @@
     </div>
 
 
+
+                         
+
+
+
+
+
+
+
+   
+
+
+    <script>
+        document.getElementById('most-visited-videos-button').addEventListener('click', function() {
+            document.getElementById('most-visited-videos-modal').style.display = 'block';
+        });
+
+        document.getElementById('close-most-visited-videos-modal').addEventListener('click', function() {
+            document.getElementById('most-visited-videos-modal').style.display = 'none';
+        });
+    </script>
+
+
+
+
+                            <hr style="border: 1px solid white; margin: 20px 0;">
+                            
+                <style>
+                    @keyframes colorChange {
+                        0% { border-color: red; }
+                        25% { border-color: yellow; }
+                        50% { border-color: green; }
+                        75% { border-color: blue; }
+                        100% { border-color: red; }
+                    }
+
+                    hr {
+                        animation: colorChange 5s infinite;
+                    }
+                </style>
+
+
     <div style="text-align: center; margin-top: 40px;">
         <p>Bienvenido a mi página de fotografía.</p>
+        <style>
+            p {
+                color: #f048f0; /* Color morado claro */
+            }
+        </style>
              Aquí encontrarás una selección de mis mejores trabajos, desde retratos hasta paisajes. Mi pasión por la fotografía me ha llevado a capturar momentos únicos y especiales que quiero compartir contigo. Espero que disfrutes de mi galería y encuentres inspiración en cada imagen.</p>
     </div>
-
+    <style>
+        p {
+            color: #f048f0; /* Color morado claro */
+        }
+    </style>
          </style>       
                                  
- 
+
 
 
 
@@ -114,6 +165,9 @@ Paisajes
     </script>
 </center>
 
+
+
+
 <br>
    <br> 
    
@@ -133,6 +187,10 @@ Paisajes
             <img src="c:\Users\valen\Desktop\pagina de fotografia\animal4.jpg" alt="Animal 4" style="width: 200px; height: auto; margin: 10px;">
         </div>
     </div>
+
+
+
+
 
     <script>
         document.getElementById('animales-album').addEventListener('click', function() {
@@ -182,16 +240,17 @@ Paisajes
 
 
 
-    
     <div style="text-align: center; margin-top: 20px;">
         <p>Sígueme en mis redes sociales:</p>
         <a href="https://www.instagram.com/sebastianvalencia.aguirre?igsh=MWNmcmNmeTg0Mzg4MA==" target="_blank" style="margin-right: 10px;">
             <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram" style="width: 40px; height: 40px;">
         </a>
-        <a href="https://www.facebook.com/share/1DhQsxfE6Z/" target="_blank">
+        <a href="https://www.facebook.com/share/1DhQsxfE6Z/" target="_blank" style="margin-right: 10px;">
             <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook" style="width: 40px; height: 40px;">
         </a>
+       
     </div>
+    
 
     <style>
         @keyframes bounce {
@@ -243,7 +302,7 @@ Paisajes
         document.querySelector('h5 img').classList.add('watermark');
     </script>
 
-
+<hr style="border: 1px solid white; margin: 20px 0;">
 
     <div style="text-align: center; margin-top: 20px;">
         <h2>Comentarios</h2>
@@ -255,6 +314,9 @@ Paisajes
             <button id="submit-comment" style="margin-top: 10px; padding: 10px 20px;">Enviar</button>
         </div>
     </div>
+
+    <hr style="border: 1px solid white; margin: 20px 0;">
+
 
     <script>
         document.getElementById('submit-comment').addEventListener('click', function() {
@@ -284,12 +346,16 @@ Paisajes
 </div>
 </center>
 
-
+<div style="margin-top: 20px;"></div>
+    <a href="https://www.bancolombia.com/personas/productos-servicios/pagos/pse" target="_blank" style="color: white; font-size: 1.5em;">Pagar con PSE</a>
+</div>
 
 
 
     
     <div id="welcome-message" style="position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: black; color: white; display: flex; justify-content: center; align-items: center; font-size: 2em; z-index: 1000;">
+       
+       
         <p>Bienvenido a mi página de fotografía</p>
         <style>
             @keyframes pulse {
@@ -304,6 +370,23 @@ Paisajes
         </style>
     </div>
 
+
+    <div style="text-align: center; margin-top: 20px;">
+        <h2>Califica esta página</h2>
+        <div id="rating" style="font-size: 2em; color: gold;">
+            <span class="star" data-value="1">&#9733;</span>
+            <span class="star" data-value="2">&#9733;</span>
+            <span class="star" data-value="3">&#9733;</span>
+            <span class="star" data-value="4">&#9733;</span>
+            <span class="star" data-value="5">&#9733;</span>
+        </div>
+    </div>
+
+
+
+
+
+
     <div style="text-align: center; margin-top: 20px;">
         <p>&copy; 2023 Todos los derechos reservados.</p>
         
@@ -312,7 +395,158 @@ Paisajes
         <h6>El uso no autorizado de cualquier contenido de esta página está sujeto a penalidades bajo la ley de derechos de autor.</h6>
     </div>
 
+    <div style="position: fixed; bottom: 20px; left: 20px;">
+        <button id="cart-button" style="font-size: 1.5em; padding: 10px;">🛒</button>
+    </div>
 
+    <div id="cart-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); text-align: center; padding-top: 50px;">
+        <span id="close-cart-modal" style="position: absolute; top: 20px; right: 20px; font-size: 2em; cursor: pointer; color: white;">&times;</span>
+        <div style="display: flex; justify-content: center; flex-wrap: wrap;">
+            <!-- Aquí se mostrarán los elementos del carrito -->
+            <div id="cart-items" style="color: white; text-align: left; max-width: 600px; margin: 0 auto;"></div>
+            <div style="margin-top: 20px;">
+                <a href="https://wa.me/3053054215" target="_blank" style="color: white; font-size: 1.5em;">Pagar con Nequi</a>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+
+    <script>
+        document.getElementById('cart-button').addEventListener('click', function() {
+            document.getElementById('cart-modal').style.display = 'block';
+        });
+
+        document.getElementById('close-cart-modal').addEventListener('click', function() {
+            document.getElementById('cart-modal').style.display = 'none';
+        });
+
+        var cartItems = [];
+
+        function addToCart(imageSrc, imageAlt) {
+            cartItems.push({ src: imageSrc, alt: imageAlt });
+            updateCart();
+        }
+
+        function updateCart() {
+            var cartItemsContainer = document.getElementById('cart-items');
+            cartItemsContainer.innerHTML = '';
+            cartItems.forEach(function(item) {
+                var img = document.createElement('img');
+                img.src = item.src;
+                img.alt = item.alt;
+                img.style.width = '100px';
+                img.style.height = 'auto';
+                img.style.margin = '10px';
+                cartItemsContainer.appendChild(img);
+            });
+        }
+
+        document.querySelectorAll('img').forEach(function(img) {
+            img.addEventListener('click', function() {
+                addToCart(img.src, img.alt);
+            });
+        });
+    </script>
+
+
+    <script>
+        function removeFromCart(index) {
+            cartItems.splice(index, 1);
+            updateCart();
+        }
+
+        function updateCart() {
+            var cartItemsContainer = document.getElementById('cart-items');
+            cartItemsContainer.innerHTML = '';
+            cartItems.forEach(function(item, index) {
+                var img = document.createElement('img');
+                img.src = item.src;
+                img.alt = item.alt;
+                img.style.width = '100px';
+                img.style.height = 'auto';
+                img.style.margin = '10px';
+                cartItemsContainer.appendChild(img);
+
+                var removeButton = document.createElement('button');
+                removeButton.textContent = 'Eliminar';
+                removeButton.style.marginLeft = '10px';
+                removeButton.addEventListener('click', function() {
+                    removeFromCart(index);
+                });
+                cartItemsContainer.appendChild(removeButton);
+            });
+        }
+    </script>
+ 
+
+
+
+<script>
+    document.querySelectorAll('#rating .star').forEach(function(star) {
+        star.addEventListener('click', function() {
+            var rating = this.getAttribute('data-value');
+            alert('Has calificado esta página con ' + rating + ' estrellas.');
+            document.querySelectorAll('#rating .star').forEach(function(s, index) {
+                if (index < rating) {
+                    s.style.color = 'gold';
+                } else {
+                    s.style.color = 'gray';
+                }
+            });
+        });
+    });
+</script>
+
+
+
+    
+    <div style="position: fixed; bottom: 20px; right: 20px;">
+        <button id="upload-button" style="font-size: 1.5em; padding: 10px;">📤</button>
+    </div>
+
+    <div id="upload-modal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0,0,0,0.8); text-align: center; padding-top: 50px;">
+        <span id="close-upload-modal" style="position: absolute; top: 20px; right: 20px; font-size: 2em; cursor: pointer; color: white;">&times;</span>
+        <div style="color: white;">
+            <h2>Subir Imagen</h2>
+            <input type="file" id="image-upload" accept="image/*" style="margin-bottom: 20px;">
+            <select id="folder-select" style="margin-bottom: 20px;">
+                <option value="paisajes">Paisajes</option>
+                <option value="animales">Animales</option>
+                <option value="iglesias">Iglesias</option>
+            </select>
+            <button id="submit-upload" style="padding: 10px 20px;">Subir</button>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('upload-button').addEventListener('click', function() {
+            document.getElementById('upload-modal').style.display = 'block';
+        });
+
+        document.getElementById('close-upload-modal').addEventListener('click', function() {
+            document.getElementById('upload-modal').style.display = 'none';
+        });
+
+        document.getElementById('submit-upload').addEventListener('click', function() {
+            var fileInput = document.getElementById('image-upload');
+            var folderSelect = document.getElementById('folder-select');
+            var file = fileInput.files[0];
+            var folder = folderSelect.value;
+
+            if (file) {
+                // Aquí puedes agregar la lógica para subir la imagen al servidor y guardarla en la carpeta seleccionada
+                alert('Imagen subida a la carpeta ' + folder);
+                document.getElementById('upload-modal').style.display = 'none';
+            } else {
+                alert('Por favor, selecciona una imagen.');
+            }
+        });
+    </script>
 
 </body>
 </html>
